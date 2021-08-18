@@ -1,0 +1,132 @@
+@import '../utilities/fonts';
+
+.section-3{
+    background-color: #f2f2f2;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5em;
+    border-bottom: solid #E3482F 5px;
+    @media (max-width:992px){
+        width: 100%;
+    }
+
+    .titulo{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        margin: 0 auto;
+        padding-top: 6em;
+        h3{
+            color: #ff4221;
+            font-size: 3em;
+            font-family: BasicGrotesque-Bold;   
+            margin-right:2rem;
+            @media(max-width:1250px){
+                margin-left:0;
+                margin-right:0;
+            } 
+            @media (max-width:992px){
+                display: flex;
+                justify-content: center;
+                font-size: 1.8em;
+            }
+            
+            @media (max-width:750px) {
+                text-align: center;
+                
+            }
+        }
+        p{
+            font-size: 1.91em;
+            font-family: BasicGrotes-Regular;
+            @media (max-width:750px) {
+                text-align: center;
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .servicios{
+        display: flex;
+        width: 75%;
+        margin: 0 auto;
+        @media (max-width:600px){
+            width: 90%;
+        }
+        @media (max-width:1500px){
+            width: 90%;
+        }
+        .dos-ultimos{
+            justify-content: center;
+            .tarjeta{
+                margin: 0;
+            }
+        }
+        .tarjeta{
+            margin: 2em auto;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            @media (max-width:600px){
+                width: 50%;
+                margin: 1em auto;
+            }
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                justify-content: center;
+                align-items: baseline;
+                padding: 0 2em;
+                width: 100%;
+                height: auto;
+                .tarjeta-imagen{
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: auto;
+                        max-height: 200px;
+                        height: auto;
+                        transition: all 0.5s;
+                        &:hover{
+                            transform: scale(1.1);
+                             ;
+                        }
+                        @media (max-width:600px){
+                            max-height: 100px;
+                        }
+                    }
+                }
+                
+                
+                div{
+                    padding: 10px 0 0 0;
+                    margin: 0;
+                    @media (max-width:600px){
+                        padding:0;
+                    }
+                    p{
+                        font-size: 1.2em;
+                        font-family: BasicGrotesque-Bold;
+                        text-align: center;
+                        @media (max-width:600px){
+                            font-size: 1em; 
+                        }
+
+                    }
+                }
+                
+            }
+        } 
+    }
+}
+
+
+
+
+
+

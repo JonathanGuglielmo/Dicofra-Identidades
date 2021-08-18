@@ -1,0 +1,137 @@
+@import '../utilities/fonts';
+
+.form{
+    margin-top: 7em;
+    padding-top: 5px;
+    background-color: #f2f2f2;
+    padding-bottom: 5em;
+    h4{
+        margin-top: 2em;
+        margin-bottom: 0.8em;
+        color: black;
+        font-size: 3.2em;
+        font-family: BasicGrotesque-Bold;
+        text-align: center;
+        span{
+            color: #E3482F;
+        }
+    }
+    h5{
+        margin-bottom: 4em;
+        text-align: center;
+        color: #ff4221;
+        font-size: 2em;
+        font-family: BasicGrotes-Regular;
+    }
+    form{
+        div{
+            margin-top: 0.8em;
+            margin-bottom: 0.8em;
+            color: #333333;
+            font-size: 2.65em;
+            font-family: BasicGrotesque-Bold;
+            text-align: right;
+            @media (max-width:600px){
+                font-size: 1.8em;
+            }
+            label{
+                padding-right: 1em;
+            }
+            
+            input{
+                border-radius: 0.3em;
+                height: 1.4em;
+                font-size: 38px;
+                padding: 31px 10px;
+                }
+            }
+        }  
+        .boton{
+            justify-content: end;
+            margin: 0;
+            font-size: 1.5em;
+            padding: 0;
+            a{
+                background-color: #ff4221;
+                color: white;
+                border: none;
+                border-radius: 15px;
+                text-align: center;
+                padding: 0.3em 1em;
+                justify-content: end;
+                text-decoration: none;
+            }
+        } 
+        
+    }
+    
+
+
+@media (max-width:992px){
+    .form{
+        h4{
+            font-size: 2.24em;
+        }
+        h5{
+            font-size: 1.8em;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        form{
+            div{
+                label{
+                    text-align: center;
+                }
+                input{
+                    margin: auto;
+                }
+                textarea{
+                    margin: auto;
+                }
+            }
+            
+            .boton{
+                display: flex;
+                .boton-fantasma{
+                    display: none;
+                }
+                justify-content: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width:600px){
+    .form{
+        form{
+            width: 80%;
+            justify-content: center;
+            margin: auto;
+            div {
+                label{
+                    padding-right: 0;
+                    font-size: 0.9em;
+                }
+                input{
+                    padding: 20px 10px;
+                    font-size: 0.8em;
+                }
+            }
+            
+            .boton{
+                font-size: 1.2em;
+            }
+        }
+        h4{
+            font-size: 1.8em;
+        }
+        h5{
+            font-size: 1.6em;
+        }
+        p{
+            font-size: 1.4em;
+        }
+    }    
+}
